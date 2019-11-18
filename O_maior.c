@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 int main()
@@ -11,7 +12,7 @@ int main()
 
   maiorAB = (a + b + abs(a-b))/2;
   maiorAB = (maiorAB + c + abs(maiorAB - c))/2;
-  printf("%d eh maior\n", maiorAB);
+  printf("%d eh o maior\n", maiorAB);
 
   return 0;
 }
