@@ -2,16 +2,17 @@
 
 int main()
 {
-  float n;
+  double n;
   int nota;
   int moeda;
   int valor;
   int resto;
   int divisao;
 
-  scanf("%f", &n);
+  scanf("%lf", &n);
 
   valor = (n * 100);
+
   printf("NOTAS:\n");
   nota = 100;
   divisao = valor / (nota * 100);
