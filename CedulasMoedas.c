@@ -3,49 +3,76 @@
 int main()
 {
   float n;
+  int nota;
+  int moeda;
+  int valor;
   int resto;
   int divisao;
-  float f_resto;
-  float f_divisao;
 
   scanf("%f", &n);
 
+  valor = (n * 100);
   printf("NOTAS:\n");
-  divisao = n / 100;
+  nota = 100;
+  divisao = valor / (nota * 100);
   printf("%d nota(s) de R$ 100.00\n", divisao);
-  resto = (int) n % 100;
+  resto = valor % (nota *100);
 
-  divisao = resto / 50;
+  nota = 50;
+  divisao = resto / (nota * 100);
   printf("%d nota(s) de R$ 50.00\n", divisao);
-  resto = resto % 50;
+  resto = resto % (nota * 100);
 
-  divisao = resto / 20;
+  nota = 20;
+  divisao = resto / (nota * 100);
   printf("%d nota(s) de R$ 20.00\n", divisao);
-  resto = resto % 20;
+  resto = resto % (nota * 100);
 
-  divisao = resto / 10;
+  nota = 10;
+  divisao = resto / (nota * 100);
   printf("%d nota(s) de R$ 10.00\n", divisao);
-  resto = resto % 10;
+  resto = resto % (nota * 100);
 
-  divisao = resto / 5;
+  nota = 5;
+  divisao = resto / (nota * 100);
   printf("%d nota(s) de R$ 5.00\n", divisao);
-  resto = resto % 5;
+  resto = resto % (nota * 100);
 
-  divisao = resto / 2;
+  nota = 2;
+  divisao = resto / (nota * 100);
   printf("%d nota(s) de R$ 2.00\n", divisao);
-  resto = resto % 2;
+  resto = resto % (nota * 100);
 
   printf("MOEDAS:\n");
-  divisao = resto / 1;
+  moeda = 100;
+  divisao = resto / moeda;
   printf("%d moeda(s) de R$ 1.00\n", divisao);
-  f_resto = resto % 1;
+  resto = resto % (moeda);
 
-  f_divisao = f_resto / 0.50;
-  printf("%d moeda(s) de R$ 0.50\n", (int) f_divisao);
-  //f_resto = f_resto % 0.50;
+  moeda = 50;
+  divisao = resto / moeda;
+  printf("%d moeda(s) de R$ 0.50\n", divisao);
+  resto = resto % (moeda);
 
-  f_divisao = f_divisao / 0.25;
-  printf("%d moedas(s) de R$ 0.25\n", f_divisao);
-  //f_resto = f_resto % 0.50;
+  moeda = 25;
+  divisao = resto / moeda;
+  printf("%d moeda(s) de R$ 0.25\n", divisao);
+  resto = resto % (moeda);
+  
+  moeda = 10;
+  divisao = resto / moeda;
+  printf("%d moeda(s) de R$ 0.10\n", divisao);
+  resto = resto % (moeda);
+
+  moeda = 5;
+  divisao = resto / moeda;
+  printf("%d moeda(s) de R$ 0.05\n", divisao);
+  resto = resto % (moeda);
+
+  moeda = 1;
+  divisao = resto / moeda;
+  printf("%d moeda(s) de R$ 0.01\n", divisao);
+  resto = resto % (moeda);
+ 
   return 0;
 }
