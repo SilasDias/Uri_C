@@ -2,12 +2,11 @@
 
 int main()
 {
-  int x;
-  float y;
-  double consumo;
+  int a;
+  int b;
+  int c;
 
-  scanf("%d", &x);
-  scanf("%f", &y);
+  scanf("%d%d%d", &a, &b, &c);
 
   consumo = x / y;
   printf("%.3lf km/l\n", consumo);
