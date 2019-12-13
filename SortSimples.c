@@ -8,8 +8,7 @@ int main()
 
   scanf("%d%d%d", &a, &b, &c);
 
-  consumo = x / y;
-  printf("%.3lf km/l\n", consumo);
+  if (a < b && a < c)
 
   return 0;
 }
