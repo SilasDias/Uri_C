@@ -7,7 +7,7 @@ int main()
 
   scanf("%d%d", &a, &b);
 
-  if ((a % b) == 0 && (b % a) == 0)
+  if ((a % b) == 0 || (b % a) == 0)
   {
     printf("Sao Multiplos\n");
   }
