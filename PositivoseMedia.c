@@ -14,12 +14,11 @@ int main()
     if(x > 0)
       {
         count ++;
+        media = media + x;
         }
-  media = media + x;
   }
   printf("%d valores positivos\n", count);
-  printf("%.1f\n", (media/6));
+  printf("%.1f\n", (media/count));
 
   return 0;
 }
-
