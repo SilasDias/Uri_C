@@ -6,20 +6,17 @@ int main()
   int count;
   int i;
 
-  scanf("%d", &x)
+  scanf("%d", &x);
 
+  i = 0;
   do {
-  for(i =0; i < 6; i++)
-  {
-    i((x % 2 != 0)
+    if((x % 2) != 0)
       {
-
+        printf("%d\n", x);
         i++;
         }
         x++;
-  }
-  printf("%d valores positivos\n", count);
+  }while(i < 6);
 
   return 0;
 }
-
